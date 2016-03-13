@@ -10,10 +10,19 @@ from racehelper.models import Race, Base, Location
 
 
 def add_test_locations(session):
-    session.add(Location(name='example location 1', google_search_term="asdf1234"))
-    session.add(Location(name='example location 2', google_search_term="asdf1234"))
-    session.add(Location(name='example location 3', google_search_term="asdf1234"))
+    locations = []
+    locations.append(Location(name='example location 1', google_search_term="asdf1234"))
+    locations.append(Location(name='example location 2', google_search_term="asdf1234"))
+    locations.append(Location(name='example location 3', google_search_term="asdf1234"))
+    for l in locations:
+        session.add(l)
+    return locations
 
+def make_race(name, datestr):
+    return Race(
+        name='example race',
+        start_time=datetime.strptime(datestr, '%d-%b-%Y'),
+    )
 
 class TestRacePersistence(unittest.TestCase):
 
@@ -24,14 +33,8 @@ class TestRacePersistence(unittest.TestCase):
         Session = sessionmaker(bind=engine)
         session = Session()
 
-        race = Race(
-            name='example race',
-            start_time=datetime.strptime('01-Jun-2016', '%d-%b-%Y'),
-        )
-        session.add(race)
+        session.add(make_race(name='example race', datestr='01-Jun-2016'))
         session.commit()
-
-        print race.id
 
         expected = ['example race']
 
@@ -39,6 +42,36 @@ class TestRacePersistence(unittest.TestCase):
         for instance in session.query(Race).order_by(Race.id):
             returned.append(instance.name)
 
+        self.assertEquals(expected, returned)
+
+
+    def test_race_location(self):
+        engine = create_engine('sqlite:///:memory:', echo=False)
+        Base.metadata.create_all(engine)
+
+        Session = sessionmaker(bind=engine)
+        session = Session()
+
+        test_locs = add_test_locations(session)
+
+
+        datestr='01-Jun-2016'
+        race = Race(
+            name='example race',
+            start_time=datetime.strptime(datestr, '%d-%b-%Y'),
+            #location_id=test_locs[0].id,
+            location_name='example location 1',
+            location_google_term='asdf1234'
+        )
+        session.add(race)
+        session.commit()
+
+        expected = 'example location 1'
+        returned = race.location_name
+        self.assertEquals(expected, returned)
+
+        expected = 'asdf1234'
+        returned = race.location_google_term
         self.assertEquals(expected, returned)
 
 
