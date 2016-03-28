@@ -6,7 +6,7 @@ from sqlalchemy import Integer, DateTime, Column, String, Float, create_engine, 
 from sqlalchemy.orm import relationship, joinedload, subqueryload, Session
 from sqlalchemy.ext.declarative import declarative_base
 
-from datetime import datetime
+from racehelper import str_format
 
 __author__ = 'kenny'
 
@@ -19,6 +19,7 @@ class Race(Base):
     __tablename__ = 'race'
     id = Column(Integer, primary_key=True)
     name = Column(String(64))
+    type = Column(String(16))
     start_time = Column(DateTime)
     location_name = Column(String(64))
     location_google_term = Column(String(64))
@@ -57,8 +58,9 @@ class RaceFactory(object):
         name = attrs2['name']
         location_name = attrs2['location']
         location_google_term = attrs2.get('locationsearchterm')
+        type = attrs2['type']
 
-        start_datetime = datetime.strptime(start_date, '%d-%b-%Y')
+        start_datetime = str_format.date_from_string(start_date)
 
         try:
             distance = _normalise_distance(distance_str)
@@ -67,6 +69,7 @@ class RaceFactory(object):
 
         return Race(
             name=name,
+            type=type,
             start_time=start_datetime,
             location_name=location_name,
             location_google_term=location_google_term,

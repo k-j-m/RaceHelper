@@ -16,16 +16,13 @@ def load_tsv_races(tsv_stream):
     object. This is not currently a requirement so has been left out.
 
     :param tsv_stream:
-    :return: List[Race]
+    :return: Iter[Race]
     """
     race_factory = RaceFactory()
-    races = []
     headers = next(tsv_stream).strip().split('\t')
 
     for line in tsv_stream:
         values = line.strip().split('\t')
         race_attributes = dict(zip(headers, values))
         new_race = race_factory.make_race(**race_attributes)
-        races.append(new_race)
-
-    return races
+        yield new_race
