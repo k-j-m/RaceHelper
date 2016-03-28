@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8951a178-5466-4a0a-8837-933c5e5cbe6a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/racehelper/demos/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/racehelper/test/resources/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/racehelper/demos/import_races.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/racehelper/importers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/racehelper/str_format.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/racehelper/test/test_factory.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/racehelper/test/test_import_csv.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/racehelper/test/test_str_formatters.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/racehelper/persistence.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RaceHelper.iml" afterPath="$PROJECT_DIR$/.idea/RaceHelper.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/racehelper/models.py" afterPath="$PROJECT_DIR$/racehelper/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/racehelper/test/test_persistence.py" afterPath="$PROJECT_DIR$/racehelper/test/test_persistence.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -27,26 +37,55 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/racehelper/models.py">
+          <file leaf-file-name="importers.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/racehelper/importers.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.477707">
-                  <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test_factory.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/racehelper/test/test_factory.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
                   <folding>
-                    <element signature="e#42#125#0" expanded="true" />
+                    <element signature="e#116#131#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test_persistence.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/racehelper/test/test_persistence.py">
+          <file leaf-file-name="_strptime.py" pinned="false" current-in-tab="false">
+            <entry file="file:///usr/lib/python2.7/_strptime.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+                  <caret line="324" column="0" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="str_format.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/racehelper/str_format.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.26273885">
+                  <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test_str_formatters.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/racehelper/test/test_str_formatters.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
                   <folding>
-                    <element signature="e#22#37#0" expanded="true" />
-                    <marker date="1457905964737" expanded="true" signature="801:1246" placeholder="..." />
+                    <element signature="e#104#119#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -56,14 +95,35 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="test_persistence.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/racehelper/test/test_persistence.py">
+          <file leaf-file-name="test_import_csv.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/racehelper/test/test_import_csv.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.58280253">
-                  <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
                   <folding>
-                    <element signature="e#22#37#0" expanded="true" />
-                    <marker date="1457905964737" expanded="true" signature="801:1246" placeholder="..." />
+                    <element signature="e#91#106#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="2016races.tsv" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/racehelper/test/resources/2016races.tsv">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="1" column="140" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="140" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/racehelper/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.45382166">
+                  <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+                  <folding>
+                    <element signature="e#42#132#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -88,7 +148,13 @@
       <list>
         <option value="$PROJECT_DIR$/racehelper/persistence.py" />
         <option value="$PROJECT_DIR$/racehelper/test/test_persistence.py" />
+        <option value="$PROJECT_DIR$/racehelper/demos/import_races.py" />
+        <option value="$PROJECT_DIR$/racehelper/importers.py" />
+        <option value="$PROJECT_DIR$/racehelper/test/test_import_csv.py" />
         <option value="$PROJECT_DIR$/racehelper/models.py" />
+        <option value="$PROJECT_DIR$/racehelper/test/test_factory.py" />
+        <option value="$PROJECT_DIR$/racehelper/test/test_str_formatters.py" />
+        <option value="$PROJECT_DIR$/racehelper/str_format.py" />
       </list>
     </option>
   </component>
@@ -97,7 +163,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-1056" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
     <option name="height" value="1056" />
   </component>
@@ -124,7 +190,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -176,8 +241,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaceHelper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RaceHelper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="racehelper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,52 +273,9 @@
     <property name="last_opened_file_path" value="$USER_HOME$/.virtualenvs/racedb/bin/python" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittest TestRacePersistence.test_race_location">
-    <configuration default="false" name="Unittests in test_persistence" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/racehelper/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RaceHelper" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/racehelper/test/test_persistence.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest TestRacePersistence.test_race" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/racehelper/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RaceHelper" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/racehelper/test/test_persistence.py" />
-      <option name="CLASS_NAME" value="TestRacePersistence" />
-      <option name="METHOD_NAME" value="test_race" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittest TestDates.test_date1">
     <configuration default="false" name="Unittest TestRacePersistence.test_race_location" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,23 +298,6 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="dist" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="/usr/lib/python2.7/distutils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RaceHelper" />
-      <option name="SCRIPT_NAME" value="/usr/lib/python2.7/distutils/dist.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="Unittest TestRacePersistence.test_store_location" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -283,6 +311,72 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/racehelper/test/test_persistence.py" />
       <option name="CLASS_NAME" value="TestRacePersistence" />
       <option name="METHOD_NAME" value="test_store_location" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestImportCsv.test_import1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/racehelper/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RaceHelper" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/racehelper/test/test_import_csv.py" />
+      <option name="CLASS_NAME" value="TestImportCsv" />
+      <option name="METHOD_NAME" value="test_import1" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestFactory.test_example1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/racehelper/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RaceHelper" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/racehelper/test/test_factory.py" />
+      <option name="CLASS_NAME" value="TestFactory" />
+      <option name="METHOD_NAME" value="test_example1" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestDates.test_date1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/racehelper/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RaceHelper" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/racehelper/test/test_str_formatters.py" />
+      <option name="CLASS_NAME" value="TestDates" />
+      <option name="METHOD_NAME" value="test_date1" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -415,19 +509,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_persistence" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestRacePersistence.test_race" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestRacePersistence.test_race_location" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dist" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestRacePersistence.test_store_location" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest TestRacePersistence.test_race_location" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestRacePersistence.test_store_location" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestImportCsv.test_import1" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest TestFactory.test_example1" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestDates.test_date1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest TestRacePersistence.test_race_location" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestRacePersistence.test_store_location" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestRacePersistence.test_race" />
-        <item index="3" class="java.lang.String" itemvalue="Python.dist" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_persistence" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest TestDates.test_date1" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestFactory.test_example1" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestImportCsv.test_import1" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest TestRacePersistence.test_race_location" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestRacePersistence.test_store_location" />
       </list>
     </recent_temporary>
   </component>
@@ -445,7 +539,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-1056" width="1855" height="1056" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -461,12 +555,20 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -479,9 +581,30 @@
     <entry file="file://$PROJECT_DIR$/racehelper/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+          <folding>
+            <element signature="e#42#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/racehelper/test/test_persistence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="e#22#37#0" expanded="true" />
+            <marker date="1457906890837" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/racehelper/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
-            <element signature="e#42#125#0" expanded="true" />
+            <element signature="e#42#132#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -492,20 +615,12 @@
           <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1457905964737" expanded="true" signature="801:1246" placeholder="..." />
+            <marker date="1457906890837" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/racedb/local/lib/python2.7/site-packages/sqlalchemy/ext/declarative/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/racehelper/persistence.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -516,7 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.116719246">
           <caret line="607" column="42" selection-start-line="607" selection-start-column="31" selection-end-line="607" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -524,28 +638,97 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12618296">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/racehelper/test/test_persistence.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
-            <marker date="1457905964737" expanded="true" signature="801:1246" placeholder="..." />
+            <marker date="1457906890837" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/racehelper/demos/import_races.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/racehelper/test/test_import_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="e#91#106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/racehelper/test/resources/2016races.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="140" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="140" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/racehelper/importers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/racehelper/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.477707">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.45382166">
+          <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
           <folding>
-            <element signature="e#42#125#0" expanded="true" />
+            <element signature="e#42#132#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/racehelper/test/test_factory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+          <folding>
+            <element signature="e#116#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/_strptime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="324" column="0" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/racehelper/test/test_str_formatters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+          <folding>
+            <element signature="e#104#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/racehelper/str_format.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26273885">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

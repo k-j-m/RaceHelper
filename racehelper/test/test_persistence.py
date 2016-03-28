@@ -6,17 +6,9 @@ from datetime import datetime
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from racehelper.models import Race, Base, Location
+from racehelper.models import Race, Base
 
 
-def add_test_locations(session):
-    locations = []
-    locations.append(Location(name='example location 1', google_search_term="asdf1234"))
-    locations.append(Location(name='example location 2', google_search_term="asdf1234"))
-    locations.append(Location(name='example location 3', google_search_term="asdf1234"))
-    for l in locations:
-        session.add(l)
-    return locations
 
 def make_race(name, datestr):
     return Race(
@@ -52,14 +44,10 @@ class TestRacePersistence(unittest.TestCase):
         Session = sessionmaker(bind=engine)
         session = Session()
 
-        test_locs = add_test_locations(session)
-
-
         datestr='01-Jun-2016'
         race = Race(
             name='example race',
             start_time=datetime.strptime(datestr, '%d-%b-%Y'),
-            #location_id=test_locs[0].id,
             location_name='example location 1',
             location_google_term='asdf1234'
         )
@@ -72,27 +60,4 @@ class TestRacePersistence(unittest.TestCase):
 
         expected = 'asdf1234'
         returned = race.location_google_term
-        self.assertEquals(expected, returned)
-
-
-    def test_store_location(self):
-        engine = create_engine('sqlite:///:memory:', echo=False)
-        Base.metadata.create_all(engine)
-
-        Session = sessionmaker(bind=engine)
-        session = Session()
-
-        add_test_locations(session)
-        session.commit()
-
-        expected = [
-            'example location 1',
-            'example location 2',
-            'example location 3',
-        ]
-
-        returned = []
-        for instance in session.query(Location).order_by(Location.id):
-            returned.append(instance.name)
-
         self.assertEquals(expected, returned)
